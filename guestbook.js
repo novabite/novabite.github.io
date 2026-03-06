@@ -90,6 +90,9 @@ const v_mainHtml = `
         <img src="https://novalite.rest/siteImage/glitter.png" id="imgE">
         <form id="c_form" onsubmit="c_submitButton.disabled = true; v_submitted = true;" method="post" target="c_hiddenIframe" action="https://docs.google.com/forms/d/e/${s_formId}/formResponse"></form>
     </div>
+    <p id="notice">
+        this code is taken from my website cuz i'm lazy. i don't sign atabooks because of the ip logger. if anyone's impersonating me kill them idk
+    </p>
     <div id="c_container">${s_loadingText}</div>
 `;
 const v_formHtml = `
