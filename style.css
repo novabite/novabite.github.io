@@ -1,0 +1,431 @@
+@font-face {
+    src: url('https://novalite.rest/font/olive.ttf');
+    font-family: olive;
+}
+@font-face {
+    src: url('https://novalite.rest/font/owb.otf');
+    font-family: owb;
+}
+.windowA a {
+    color: #751300!important;
+}
+#c_widget {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0.95em;
+    overflow: auto;
+    font-family: olive;
+    font-size: 0.9em;
+    color: #211F24;
+}
+#c_widget input[type=submit] {
+    background: #361D2E;
+    background-size: 2em;
+    text-shadow: 0px 0px 1px #361D2E!important;
+    color: #A5F3E6!important;
+    font-weight: bold;
+    font-family: olive;
+    padding: 0.1em 0.6em;
+    font-size: 1em;
+    letter-spacing: 0.07em;
+    border-radius: 1em;
+    transition: 0.2s ease;
+    filter: drop-shadow(1px 1px 0 #361D2E) drop-shadow(-1px 1px 0 #361D2E) drop-shadow(0 -1px 0 #361D2E) drop-shadow(1px 0 #361D2E);
+}
+#c_widget input[type=submit]:hover {
+    opacity: 85%;
+}
+#c_widget button:disabled, #c_widget input[type=submit]:disabled {opacity: 60%;}
+
+/* Input section */
+#c_inputDiv {
+    text-transform: lowercase;
+    padding-bottom: 1em;
+    position: relative;
+}
+#c_container {margin-top: 10px;}
+
+#c_widgetTitle {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    font-family: owb;
+    font-size: 2em;
+    margin: 0 0.1em 0.4em auto;
+    filter: drop-shadow(1px 1px 0 #361D2E) drop-shadow(-1px 1px 0 #361D2E) drop-shadow(0 -1px 0 #361D2E) drop-shadow(1px 0 #361D2E);
+    text-shadow: 0px 0px 2px #361D2E;
+    color: #F0ECA2;
+}
+
+.c-inputWrapper {
+    display: block;
+    margin: 0.4em auto;
+    font-size: 1.2em;
+}
+.c-input {
+    padding: 4px;
+    color: #361D2E;
+    border-radius: 4px;
+    border: 1px solid #361D2E;
+	outline: none;
+}
+.c-input:focus {border: 1px solid #F0ECA2;}
+
+.c-textInput {
+    width: calc(100% - 0.1em);
+    max-width: 73.7em;
+    resize: none;
+}
+#c_submitButton {
+    display: block;
+}
+#c_submitButton:hover {
+    cursor: pointer;
+}
+#c_replyingText {
+    color: #361D2E85;
+    font-size: 1.2em;
+    margin: 0.35em auto 0;
+    font-style: italic;
+}
+
+/* Comment section */
+.c-comment {
+    margin: 0.95em auto;
+    background-color: #F0ECA2;
+    background: linear-gradient(180deg,rgba(240, 236, 162, 1) 0%, rgba(242, 217, 141, 1) 100%);
+    border: 4px ridge #ff6702;
+    border-radius: 1em;
+    color: #751300;
+    position: relative;
+    padding: 0 0 0.5em;
+}
+.c-reply {
+    margin: 0.55em 0.45em 0 auto;
+    background-color: #A5F3E6;
+    background: linear-gradient(180deg, #a5f3e6 0%, #95e1ed 100%);
+    border: 4px ridge #361D2E;
+    border-radius: 1em;
+    color: #361D2E;
+    position: relative;
+    width: 95.5%;
+}
+.c-reply:after {
+    content: '';
+    background: url('https://novalite.rest/siteImage/starbgB.jpg');
+    background-size: 2em;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.85em;
+    position: absolute;
+    border-radius: 0.75em 0.75em 0 0;
+}
+.c-reply:before {
+    content: '';
+    background: url('https://novalite.rest/siteImage/reply.png');
+    background-size: 1.7em;
+    background-repeat: no-repeat;
+    width: 4em;
+    height: 2em;
+    position: absolute;
+    left: -1.9em;
+    top: 1em;
+}
+.c-reply .c-name {
+    text-shadow: 0px 0px 1px #361D2E;
+    filter: drop-shadow(1px 1px 0 #361D2E) drop-shadow(-1px 1px 0 #361D2E) drop-shadow(0 -1px 0 #361D2E) drop-shadow(1px 0 #361D2E);
+    height: 1.3em !important;
+    color: #A5F3E6;
+    margin: 0.2em auto 0 0.55em;
+    padding: 0;
+    text-decoration: none;
+    z-index: 2;
+    position: relative;
+    letter-spacing: 0.05em;
+}
+.c-reply .c-text {
+    margin: 0 auto 0.25em;
+    padding: 0.3em 0.4em 0 0.4em;
+    text-align: justify;
+    border-top: 4px ridge #361D2E;;
+    font-size: 1.1em;
+}
+.c-reply .c-site {
+    text-transform: lowercase;
+    background-color: #A5F3E6;
+    background: linear-gradient(180deg, #a5f3e6 0%, #95e1ed 100%);
+    border-radius: 1em;
+    padding: 0.1em 0.4em;
+    z-index: 2;
+    position: relative;
+    margin: 0 auto 0 0.3em;
+    color: #361D2E!important;
+    transition: 0.2s ease;
+    font-size: 1.1em;
+    text-decoration: none!important;
+}
+.c-reply .c-site:hover {
+    opacity: 75%;
+    letter-spacing: 0.05em;
+}
+.c-reply .c-timestamp {
+    float: right;
+    z-index: 2;
+    position: relative;
+    background-color: #A5F3E6;
+    background: linear-gradient(180deg, #a5f3e6 0%, #95e1ed 100%);
+    border-radius: 1em;
+    padding: 0.1em 0.4em;
+    margin: 0.2em 0.2em 0;
+}
+.c-reply:last-child {margin-bottom: 0;}
+
+.c-name {
+    display: inline-block;
+    margin: 0.2em auto 0 0.4em;
+    padding: 0;
+    text-decoration: none;
+    z-index: 2;
+    position: relative;
+    letter-spacing: 0.05em;
+}
+.c-comment:after {
+    content: '';
+    background: url('https://novalite.rest/siteImage/starbg.jpg');
+    background-size: 2em;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.8em;
+    position: absolute;
+    border-radius: 0.75em 0.75em 0 0;
+}
+.c-site {
+    text-transform: lowercase;
+    background: linear-gradient(180deg,rgba(240, 236, 162, 1) 0%, rgba(242, 217, 141, 1) 100%);
+    border-radius: 1em;
+    padding: 0.1em 0.4em;
+    z-index: 2;
+    position: relative;
+    margin: 0 auto 0 0.3em;
+    color: #751300!important;
+    transition: 0.2s ease;
+    font-size: 1.1em;
+    text-decoration: none!important;
+}
+.c-site:hover {
+    opacity: 75%;
+    letter-spacing: 0.05em;
+}
+.c-timestamp {
+    float: right;
+    z-index: 2;
+    position: relative;
+    background: linear-gradient(180deg,rgba(240, 236, 162, 1) 0%, rgba(242, 217, 141, 1) 100%);
+    border-radius: 1em;
+    padding: 0.1em 0.4em;
+    margin: 0.2em 0.2em 0;
+}
+.c-text {
+    margin: 0.15em auto 0.25em;
+    padding: 0.3em 0.4em 0 0.4em;
+    text-align: justify;
+    border-top: 4px ridge #ff6702;;
+    font-size: 1.1em;
+}
+
+/* Pagination */
+#c_pagination {text-align: center;}
+.c-replyButton {
+    margin: 0.25em auto 0 0.6em;
+    background: url('https://novalite.rest/siteImage/starbg.jpg');
+    background-size: 2em;
+    border: 4px ridge #ff6702!important;
+    border-radius: 1em!important;
+    font-family: olive;
+    font-size: 0.9em;
+    padding: 0.1em 0.6em!important;
+    letter-spacing: 0.065em;
+    text-shadow: 0px 0px 2px #FFC616;
+    color: #751300!important;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+.c-replyButton:hover {
+    cursor: pointer;
+}
+.c-expandButton {
+    float: right;
+    margin-top: 10px;
+}
+.c-paginationButton {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+#c_leftButton, #c_rightButton {
+    background: url('https://novalite.rest/siteImage/starbgB.jpg');
+    background-size: 2em;
+    text-shadow: 0px 0px 1px #361D2E!important;
+    color: #A5F3E6!important;
+    border: 4px ridge #361D2E!important;
+    font-weight: bold;
+    font-family: olive;
+    font-size: 1.6em;
+    width: 1.5em;
+    height: 1.5em;
+    position: relative;
+    border-radius: 0.35em;
+}
+#c_rightButton:before {
+    content: '';
+    width: 1.2em;
+    height: 1.2em;
+    background: url('https://novalite.rest/global/lightbox/images/next.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: -0.1em;
+}
+#c_leftButton:before {
+    content: '';
+    width: 1.2em;
+    height: 1.2em;
+    background: url('https://novalite.rest/global/lightbox/images/prev.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0.1em;
+}
+main {
+    position: relative;
+    width: 65em;
+    margin: 0 auto;
+}
+#mainDiv {
+    width: 65em;
+    margin: 2em auto 0;
+}
+#mainDiv .inner {
+    height: 38em;
+    padding: 0!important;
+    margin: 0!important;
+}
+#back {
+    font-family: starshine;
+    font-size: 3em;
+    background-image: url("https://novalite.rest/siteImage/starbgh.gif");
+    background-size: contain;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #361D2E;
+    filter: drop-shadow(1px 1px 0 #F0ECA2) drop-shadow(-1px 1px 0 #F0ECA2) drop-shadow(0 -1px 0 #F0ECA2) drop-shadow(1px 0 #F0ECA2);
+    position: relative;
+    z-index: 999;
+    letter-spacing: 0.15em;
+    width: fit-content;
+    text-decoration: none!important;
+    margin: 0.4em auto;
+    display: block;
+    text-align: center;
+    transform-origin: center;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.22, 2.06, .11, .69);
+}
+#back:hover {
+    cursor: pointer;
+    scale: 103%;
+    rotate: 2deg;
+    letter-spacing: 0.2em;
+}
+#imgA {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    left: -12.9em;
+    top: 2em;
+    pointer-events: none;
+    width: 13em;
+    transform: scaleY(-1);
+}
+#imgB {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    width: 17em;
+    top: 28em;
+    right: -13em;
+}
+#imgC {
+    position: absolute;
+    z-index: 99;
+    pointer-events: none;
+    width: 10em;
+    top: 0;
+    left: 21.5em;
+}
+#imgD {
+    position: absolute;
+    z-index: 99;
+    pointer-events: none;
+    width: 10em;
+    top: 0;
+    right: 3.25em;
+    transform: scale(-1);
+}
+#imgE {
+    position: absolute;
+    z-index: 99;
+    pointer-events: none;
+    width: 9em;
+    right: 15em;
+    top: -1.5em;
+    transform: rotate(-45deg);
+    filter: drop-shadow(0px 1px #ECCB64) drop-shadow(0 -1px #ECCB64) drop-shadow(1px 0 #ECCB64) drop-shadow(-1px 0 #ECCB64);
+}
+#imgF {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    width: 10em;
+    left: -6.5em;
+    top: 19em;
+}
+#imgG {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    width: 10em;
+    right: -6.5em;
+    bottom: 26em;
+    transform: scaleX(-1);
+}
+@media screen and (max-width: 799px) {
+    body {
+        overflow-x: hidden;
+    }
+    body, main {
+        background-size: auto 100%;
+        margin: 0 auto;
+        width: 98%!important;
+    }
+    #imgA, #imgB, #imgC, #imgD, #imgE, #imgF, #imgG {
+        display: none;
+    }
+    #mainDiv {
+        width: 98.5%;
+    }
+    .c-reply {
+        width: calc(70% + 10vw);
+    }
+}
